@@ -26,5 +26,3 @@ def find_most_frequent(l):
         if keepcount == newlist[x]:
             freq_num.add(x)
     return freq_num
-
-    return set()
