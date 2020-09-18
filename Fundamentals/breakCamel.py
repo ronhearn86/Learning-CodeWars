@@ -1,17 +1,14 @@
 def solution(s):
     arry = list(s)
-    arry2 = []
-    arry3 = []
-    print(arry)
+    count_array = []
     count = 0
+    for x in arry:
+        if x.isupper():
+            count_array.append(count)
+        count += 1
+    count_array.sort(reverse=True)
+    for i in count_array:
+        arry.insert(i, " ")
 
-    for i in range(len(arry)):
-        for x in arry:
-            if x is not x.lower():
-                arry2.append(x)
-                arry3.append(i)
-                print(arry3)
-
-
-
-solution('breakCamelCamp')
+    listToStr = ''.join(arry)
+    return listToStr
