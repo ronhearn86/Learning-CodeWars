@@ -29,3 +29,4 @@ def number(bus_stops):
     return sum([stop[0] - stop[1] for stop in bus_stops])
 #Code i seen in solutions after my submission that is faster
 '''
+
